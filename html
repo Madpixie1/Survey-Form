@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title >Maddie's Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Maddie's Survey Form</h1>
+    <p id="description">Thank you for taking the time to answer the questions!</p>
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name"> Name <input placeholder="Enter your name" id="name" name="name" type="text" required/></label>
+      </div>
+      <div>
+        <label id="email-label" for="email-label"> Email <input placeholder="Enter your email"id="email" type="email" name="email" required/></label>
+      </div>
+      <div>
+        <label id="number-label"
+ for="number">Age<input placeholder="Age" id="number" type="number" min="13" max="120"/></label>
+      </div>
+        <p>How do you know Maddie? </p>
+        <select id="dropdown">
+          <option value="0">select option</option>
+          <option value="friend">Friend</option>
+          <option value="family">Family</option>
+          <option value="other">Other</option>
+        </select>
+      <div>
+        <p>Are you allergic to cats?</p>
+        <label for="yes"><input id="yes" name="Allergy" Value="yes" type="radio"> Yes</label>
+        <label for="no"><input id="no" name="Allergy" Value="no" type="radio"> No</label>
+        <label for="Maybe"><input id="Maybe" name="Allergy" Value="Maybe" type="radio"> Maybe</label>
+      </div>
+      <div>
+        <p>What are your hobbies?</p>
+        <label>
+          <input id="tv" type="checkbox" value="tv">TV
+        </label>
+        <label>
+          <input id="Reading" type="checkbox" value="Reading">Reading
+        </label>
+        <label>
+          <input id="Arts" type="checkbox" value="Arts">Arts and Crafts
+        </label>
+        <label>
+          <input id="Games" type="checkbox" value="Games">Video Games
+        </label>
+        <label>
+          <input id="Other" type="checkbox" value="Other">Other
+        </label>
+      </div>
+      <div>
+        <label for="bucketlist">What are the top 10 things you'd like to accomplish before you die? 
+          <textarea id="bucketlist" name="bucketlist" placeholder="Enter items here"></textarea>
+          </label>
+      </div>
+      <div>
+        <input id="submit" type="submit" value="submit"/>
+      </div>
+    </form>
+  </body>
+</html>
